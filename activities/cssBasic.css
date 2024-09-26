@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+footer p {
+  background-color: lightcoral;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 20px 0;
+}
