@@ -1,0 +1,55 @@
+/*Set the default things*/
+/*I used "body" instead of "*", because Brother Slade taught us to use Body when we were in class*/
+body {
+  font-family: "Courier New", Courier, monospace;
+  /*First Color for default text*/
+  color: rgb(28, 24, 87);
+  font-size: 16px;
+  /*Second Color for Back-ground*/
+  background-color: rgb(138, 135, 182);
+}
+
+/*class*/
+.emp {
+  font-family: Monaco, monospace;
+  /*Third Color for emphasizing text*/
+  color: rgb(10, 7, 56);
+}
+
+/*class*/
+.de-emp {
+  /*Fourth Color for de-emphasizing text*/
+  color: rgb(76, 73, 137);
+}
+
+/*id*/
+#slank {
+  font-size: 2.5rem;
+}
+
+/*id*/
+#bimbim {
+  font-size: 2.5rem;
+}
+
+/*id*/
+#emphasize {
+  color: rgb(10, 7, 56);
+}
+
+/*SPAN using descendant*/
+#emphasize span {
+  background-color: rgb(10, 7, 56);
+  font-size: 0.8rem;
+}
+
+/*id*/
+#de-emphasize {
+  color: rgb(76, 73, 137);
+}
+
+/*SPAN using descendant*/
+#de-emphasize span {
+  background-color: rgb(76, 73, 137);
+  font-size: 0.8rem;
+}
