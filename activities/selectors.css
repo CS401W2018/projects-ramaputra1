@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#first {
+  background-color: #add8e6;
+  padding: 10px 10px;
+}
+
+.second {
+  background-color: #ffe4c4;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+}
+
+section .second {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(249, 114, 114);
+  padding: 10px 10px;
+}
+
+#first .span1 {
+  background-color: blue;
+}
+
+/*SERIF is kinda hard to read, so better use SANS-SERIF*/
