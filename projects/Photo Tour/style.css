@@ -1,0 +1,26 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  background: url(images/bg.webp) lightgreen repeat;
+}
+
+.primaryPage {
+  background: url(images/TemplePrimary.jpg) bottom right no-repeat;
+}
+
+.list {
+  list-style-image: url(images/favicon-16x16.png);
+}
+
+nav a {
+  color: maroon;
+}
+
+.active {
+  color: darkgreen;
+}
+
+footer {
+  font-weight: bold;
+}
