@@ -1,0 +1,28 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  /* background-color: blue;
+  background-image: url(../backgroundImages/images/gradient-blue-background_52683-83113.jpg); */
+  background: url(../backgroundImages/images/gradient-blue-background_52683-83113.jpg)
+    blue;
+}
+
+header {
+  /* background-position: top right;
+  background-repeat: no-repeat;
+  background-image: url(../backgroundImages/images/trophy_1074653.png); */
+  background: url(../backgroundImages/images/trophy_1074653.png) center
+    no-repeat;
+}
+
+.list {
+  list-style-image: url(../backgroundImages/images/save-planet_2606151.png);
+}
+
+nav a {
+  color: green;
+}
+
+.active {
+  color: purple;
+}
