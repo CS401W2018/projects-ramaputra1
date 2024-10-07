@@ -2,10 +2,10 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: rgb(0, 0, 0);
-  background: url(images/bg.webp) lightgreen repeat;
+  background: url(images/bg.webp) rgb(179, 251, 189) repeat;
 }
 
-.primaryPage {
+#primaryPage {
   background: url(images/TemplePrimary.jpg) bottom right no-repeat;
 }
 
