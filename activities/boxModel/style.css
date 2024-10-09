@@ -1,0 +1,41 @@
+body {
+  background-color: lightblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  margin: 10px 20px;
+  background-color: lightgreen;
+
+  width: 70%;
+  margin: 10px auto;
+  padding: 10px 70px 10px 4px;
+}
+
+header h1 {
+  margin-bottom: 0;
+  border: 1px solid red;
+}
+
+nav {
+  background-color: lightcoral;
+  height: 200px;
+  margin-top: 15px;
+}
+
+figure {
+  border: 2px solid black;
+  width: 200px;
+}
+
+img {
+  width: 200px;
+}
+
+#wrap {
+  width: 1000px;
+  margin: auto;
+  background-color: white;
+  /* border: 2px solid black; */
+}

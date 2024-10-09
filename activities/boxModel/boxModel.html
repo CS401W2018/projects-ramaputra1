@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>The Box Model</h1>
+      </header>
+      <nav>
+        <a href="">A</a>
+        <a href="">B</a>
+        <a href="">C</a>
+      </nav>
+      <main>
+        <h2>Block Tags</h2>
+        some text
+        <figure>
+          <img src="../images/mountain.jpg" alt="mount" />
+          <figcaption>A picture of mountain</figcaption>
+        </figure>
+        some text
+        <hr />
+        <h1>Engagement Questions</h1>
+        <ol>
+          <ul>
+            <h3>
+              1. What is the difference between block tags and inline tags.
+            </h3>
+            <p>
+              Block tag will take full widht as long as the screen and also will
+              make a new line, in other hand inline will only as big as the
+              content and will not make new line.
+            </p>
+          </ul>
+          <ul>
+            <h3>2. What is the margin, border, and padding?</h3>
+            <p>
+              It's a gap for the content that you have. Padding is the most
+              inside for the gap of your content, then, it goes to border, then
+              the most outside is margin.
+            </p>
+          </ul>
+          <ul>
+            <h3>3. What are units of measurement you can use in CSS?</h3>
+            <p>
+              We can use the fix one like px, cm like that, or the relatives one
+              like percent, rem, em, vh.
+            </p>
+          </ul>
+          <ul>
+            <h3>4. When would you use a figure tag?</h3>
+            <p>
+              We use that when we have img tag, and we want that img to be wrap
+              and change to block, so we have new line for the text that we want
+              to input.
+            </p>
+          </ul>
+        </ol>
+
+        <hr />
+        <h2>Note</h2>
+        <p>
+          1. Margin will <strong>overlapping</strong>, let say if your header
+          have <strong>margin-botom 20px</strong>, and right after that you have
+          your main tag, you need <strong>more than 20px</strong> for your main
+          <strong>margin-top</strong> to move, because you margin is
+          overlapping.
+        </p>
+        <p>2. Text Align, only works for text.</p>
+        <p>
+          3. Margin Auto: Take up the rest of the space and whatever you have
+          available to you. If you put margin-right auto it will move to left
+          vice versa. (Try that)
+        </p>
+        <p>4. Margin Outside, Padding Inside</p>
+        <p>
+          5. Figure tag, will make your img tag to be block. So it works like
+          container for your img.
+        </p>
+      </main>
+      <footer>
+        <p>&copy; Rama Putra, 2024</p>
+      </footer>
+    </div>
+  </body>
+</html>
