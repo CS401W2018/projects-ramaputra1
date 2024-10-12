@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning / Tool Box</title>
+    <link rel="stylesheet" href="mountain.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nature</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">One</a></li>
+        <li><a href="">Two</a></li>
+        <li><a href="">Three</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+    <main>
+      <h1>Mountain</h1>
+      <figure id="pic">
+        <img src="../images/mountain.jpg" alt="mount" />
+        <figcaption>A picture of mountain</figcaption>
+      </figure>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        reiciendis tenetur quibusdam officia, earum placeat voluptatem
+        laboriosam voluptates nulla praesentium omnis id eos tempore ea modi
+        odio est doloremque asperiores.
+      </p>
+      <div class="clear"></div>
+      <hr />
+      <h1>Engagement</h1>
+      <ol>
+        <li>
+          <h3>
+            What is the difference between a block and an inline tag? Give
+            examples of each one.
+          </h3>
+          <p>
+            The differences is that block will have a full of the screen as
+            widht so it will make a new line, <br />
+            and inline will only take as big as content for the width so it will
+            required a new line. <br />
+            Example: <br />
+            Inline: span, a, img. <br />
+            Block: p, h1, h3
+          </p>
+        </li>
+        <li>
+          <h3>What is normal flow in HTML?</h3>
+          <p>
+            Normal flow is the default flow in HTML CSS, it allows each block
+            element to have new line in ordered. So, each block tag wants to
+            take the entire width of the screen. Then, if we have a tag inside
+            of a block tag it will also take up the width of the previous block
+            tag (parents). Then, next block tag will take new line. That is
+            normal flow.
+          </p>
+        </li>
+        <li>
+          <h3>What does float do? Why do you need to clear the float?</h3>
+          <p>
+            Float allowed us to make the img that we have or element block that
+            we have to be on the right or left side, then if we have text there
+            we can make our text to be in the next of our image, not in the
+            below of the picture. <br />
+            We want to clear the float so it will not be collaps, because the
+            flow being crash, so we need to make empty div and use that div with
+            clear property in CSS, to be clear right, left or both.
+          </p>
+        </li>
+        <li>
+          <h3>What do absolute, fixed, and relative do?</h3>
+          <p>
+            All these property work to positioning the content that we have. It
+            works like move that content to another dimension and then it will
+            allow us to move the content everywhere that we want using top,
+            bottom, left, right with measurement there. <br />
+            The difference is: <br />
+            absolute: move to another dimension but the place or space before is
+            not reserved. <br />
+            relative: opposite of the absolute, the space before reserved.
+            <br />
+            fixed: same but it will fixed there, not move anywhere.
+          </p>
+        </li>
+        <li>
+          <h3>How can you make nice navigation buttons for mobile devices?</h3>
+          <p>
+            First, if we use ul just list-style-type = none, then make it block
+            so we can give padding to have space there, and style it with border
+            and bg color, then use hover as pseudoclass to transform your nav to
+            be different when it on hover. if you want to make it horizontally
+            use in your ul float, but dont forget to clear it.
+          </p>
+        </li>
+        <li>
+          <h3>
+            Where can you find videos to review what we talked about in class?
+          </h3>
+          <p>
+            Go to canvas and find "More CSS and Box Model", and go to "Lecture
+            Notes - CSS and Box Model". There are 2 videos for this week.
+          </p>
+        </li>
+      </ol>
+      <hr />
+      <h1>*Note</h1>
+      <p>
+        1. Normal flow: <strong>(NORMAL)</strong> each block tag wants to take
+        the entire width of the screen. Then, if we have a tag inside of a block
+        tag it will also take up the width of the previous block tag (parents).
+        Then, next block tag will take new line.
+      </p>
+      <p>
+        2. When we use the float it will make the flow collaps, so we use clear
+        to make the flow to be normal. nicey!
+      </p>
+    </main>
+    <footer>
+      <p>&copy; Rama Putra, 2024</p>
+    </footer>
+  </body>
+</html>
