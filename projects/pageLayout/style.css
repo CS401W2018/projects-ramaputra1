@@ -1,0 +1,172 @@
+body {
+  background-color: maroon;
+  margin-bottom: 50px;
+  /*First Font Family*/
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#wrapper {
+  /*Width*/
+  width: 900px;
+  background-color: rgb(255, 255, 41);
+  margin: 0 auto;
+}
+
+hr {
+  border: 1px solid maroon;
+}
+
+header {
+  padding-top: 20px;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.title {
+  color: maroon;
+  background-color: white;
+  /*Border Radius*/
+  border-radius: 10px;
+  width: fit-content;
+  /*Margin*/
+  margin: 0 auto;
+  padding: 10px 50px;
+  /*Text Align*/
+  text-align: center;
+  /*Text Shadow*/
+  text-shadow: 1px 1px 2px darkorange;
+  /*Box Shaow*/
+  box-shadow: 10px 8px 8px rgb(197, 108, 0);
+  /*Background Image*/
+  background: url(images/logo.png) repeat;
+  /*Background Clip*/
+  background-clip: padding-box;
+}
+
+.title span {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 0.1em 0.1em;
+  border: 2px solid rgb(0, 0, 0), 0.5;
+  box-shadow: 3px 4px 4px rgb(90, 97, 25), 3px -3px 5px rgb(90, 97, 25),
+    -3px -3px 5px rgb(90, 97, 25);
+}
+
+.title2 {
+  color: maroon;
+  width: fit-content;
+  border: 3px double rgb(199, 216, 15);
+  background-color: white;
+  border-radius: 30px;
+  margin: 10px auto;
+  /*Padding*/
+  padding: 13px 30px;
+  /*Text Align*/
+  text-align: center;
+  margin-bottom: 1em;
+  /*Text Shadow*/
+  text-shadow: 1px 1px 2px darkorange;
+  /*Box Shaow*/
+  box-shadow: -10px 10px 10px rgb(197, 108, 0);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+nav ul li a {
+  /*Text Transform*/
+  text-transform: uppercase;
+  font-size: 0.9em;
+  background-color: maroon;
+  border-radius: 10px;
+  /* border: 1px solid rgb(255, 0, 0); */
+  padding: 15px 25px;
+  margin: 1em 1.5em;
+  color: rgb(255, 221, 0);
+}
+
+/*Pseudo-Classes Hover*/
+nav ul li a:hover {
+  background-color: rgb(31, 3, 3);
+}
+
+nav {
+  /*Text Align*/
+  text-align: center;
+}
+
+/*main*/
+main {
+  margin: 0 3em;
+  margin-top: 3em;
+}
+
+.title-main {
+  width: fit-content;
+  margin-left: 30px;
+  background-color: rgb(255, 255, 255);
+  color: maroon;
+  padding: 5px 20px;
+  box-shadow: 10px 8px 8px rgb(197, 108, 0);
+}
+
+#fg {
+  border: 2px solid maroon;
+  width: 400px;
+
+  float: left;
+  box-shadow: 10px 8px 8px rgb(197, 108, 0);
+}
+
+.fc {
+  /*Text Align*/
+  text-align: center;
+  padding: 10px 0;
+  color: maroon;
+  /*Font Style*/
+  font-style: italic;
+  /*Font Weight*/
+  font-weight: bold;
+}
+
+/*My Clear*/
+.clear {
+  clear: both;
+}
+
+.pg {
+  /* font-weight: bolder; */
+  margin: 3em 0;
+  /*Font Size*/
+  font-size: 0.93em;
+  /*Line Height*/
+  line-height: 1.8em;
+  color: maroon;
+  /*Second Font Family*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pg span {
+  font-weight: bold;
+}
+
+footer {
+  /*Text Align*/
+  text-align: center;
+  /*Height*/
+  height: 80px;
+}
+
+footer p {
+  width: 70%;
+  /*Third Font Family*/
+  font-family: "Times New Roman", Times, serif;
+  padding: 30px 100px;
+  margin: 10px 20px;
+  color: maroon;
+  /*background image*/
+  background: url(images/logo.png) right no-repeat;
+}
