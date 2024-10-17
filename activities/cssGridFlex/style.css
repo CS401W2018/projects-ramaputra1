@@ -1,0 +1,25 @@
+.container {
+  background-color: lightblue;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "top top top"
+    "left main right"
+    "bottom bottom bottom";
+}
+
+.item {
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.itemB {
+  grid-area: bottom;
+}
+
+.itemA {
+  grid-area: top;
+}
