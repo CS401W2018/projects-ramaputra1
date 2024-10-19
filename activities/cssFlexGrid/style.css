@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  /*Happen when in Mobile or in small widht will have two row*/
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px 5px;
+  width: 200px;
+}

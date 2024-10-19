@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightblue;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5em 0.5em;
+  display: block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-areas: "asideLeft mainRight";
+}
+
+aside {
+  grid-area: asideLeft;
+  background-color: lightyellow;
+}
+
+main {
+  grid-area: mainRight;
+  background-color: lightcoral;
+  height: 600px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "top1 top2 top3"
+    "bottom1 bottom2 bottom3";
+}
+
+.item {
+  background-color: rgb(0, 103, 194);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.item figure img {
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+.itemA {
+  grid-area: top1;
+}
+
+.itemB {
+  grid-area: top2;
+}
+
+.itemC {
+  grid-area: top3;
+}
+
+.itemD {
+  grid-area: bottom1;
+}
+
+.itemE {
+  grid-area: bottom2;
+}
+
+.itemF {
+  grid-area: bottom3;
+}
+
+/*footer*/
+footer a {
+  display: block;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
