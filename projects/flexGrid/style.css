@@ -1,26 +1,25 @@
 body {
-  margin: 0;
-  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 header {
-  width: 100%;
-  height: 80px;
-  background-color: lightgreen;
-  display: flex;
-  align-items: center;
+  background-color: darkgreen;
+  padding: 3px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 241, 241);
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  background-color: lightblue;
+  background-color: rgb(61, 165, 61);
 }
 
 nav a {
-  text-decoration: none;
-  padding: 0.5em 0.5em;
   display: block;
+  text-decoration: none;
+  padding: 14px 20px;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -31,34 +30,46 @@ nav a {
 
 aside {
   grid-area: asideLeft;
-  background-color: lightyellow;
+  padding: 10px 10px;
 }
 
 main {
-  grid-area: mainRight;
-  background-color: lightcoral;
-  height: 600px;
-
   display: grid;
+  grid-area: mainRight;
+  height: fit-content;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 5px;
+  gap: 1em;
   grid-template-areas:
     "top1 top2 top3"
     "bottom1 bottom2 bottom3";
 }
 
 .item {
-  background-color: rgb(0, 103, 194);
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.fg {
+  height: fit-content;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.9);
+}
+
+.fc {
+  padding: 1px 5px;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fc span {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .item figure img {
-  width: 50%;
-  height: 50%;
-  border: 1px solid black;
+  width: 100%;
+  height: 100%;
 }
 
 .itemA {
@@ -85,12 +96,12 @@ main {
   grid-area: bottom3;
 }
 
-/*footer*/
 footer a {
   display: block;
 }
 
 footer {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
