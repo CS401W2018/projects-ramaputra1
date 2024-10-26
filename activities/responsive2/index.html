@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  </head>
+  <body>
+    <header>
+      <h1>Web Dev</h1>
+    </header>
+    <nav>
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+    </nav>
+    <main>
+      <h2>Main Content</h2>
+      <div class="container">
+        <div class="fg">
+          <img src="images/mountain.jpg" alt="mountain" />
+          <div class="text">
+            <h3>Mountain Left</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="fg maincard">
+          <img src="images/mountain.jpg" alt="mountain" />
+          <div class="text">
+            <h3>Mountain Center</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="fg">
+          <img src="images/mountain.jpg" alt="mountain" />
+          <div class="text">
+            <h3>Mountain Right</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h1>Engagement Questions</h1>
+      <ol>
+        <li>
+          <h3>Why do we need a viewport meta tag?</h3>
+          <p>
+            We need Meta tag viewport because it helps our website to be
+            responsive, it will adjusting the website to different other devices
+            like phone, tablet, desktop.
+          </p>
+        </li>
+        <li>
+          <h3>
+            When you select the same tag twice, and in one of them you say
+            "flex-direction: column;" and the other says "flex-direction: row;",
+            which one takes priority?
+          </h3>
+          <p>
+            In CSS, the last thing in the stylesheet will take precedence. So it
+            depends which property in that tag that be in the last, if the
+            flex-direction: row in the last, CSS will use that.
+          </p>
+        </li>
+        <li>
+          <h3>
+            How do you change the CSS for a web page displayed on a phone?
+          </h3>
+          <p>
+            We change that using media queries, by type @media then say for the
+            screen and set the width and each break point, then we can apply
+            what we want in that range of width. Let say in the phone width we
+            want the nav to be in the hamburgermenu or something like that.
+          </p>
+        </li>
+      </ol>
+    </main>
+    <footer>
+      <p>Rama, 2024.</p>
+    </footer>
+  </body>
+</html>
