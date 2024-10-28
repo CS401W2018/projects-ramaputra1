@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  background-color: yellow;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0.4em 0.6em;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 0.7em 0.3em;
+}
+
+nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Content*/
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/*left*/
+
+.left {
+  width: 30%;
+  background-color: green;
+  overflow: hidden;
+}
+
+.left h2 {
+  padding: 0 0.7em;
+}
+
+.fg-left {
+  border: 2px solid black;
+  width: 50%;
+  height: fit-content;
+}
+
+.fg-left img {
+  width: 100%;
+}
+
+.fg-left h4 {
+  padding: 0 0.6em;
+}
+
+/*Right*/
+
+.right {
+  background-color: red;
+  width: 70%;
+}
+
+.right h2 {
+  padding: 0 0.7em;
+}
+
+.right-content {
+  background-color: rgb(255, 0, 204);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fg-right {
+  border: 2px solid black;
+  width: 200px;
+  height: 500px;
+}
+
+.fg-right img {
+  width: 100%;
+}
+
+.text-right {
+  padding: 0.5em 0.5em;
+}
+
+/*footer*/
+footer {
+  background-color: yellow;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*Media Queries*/
+
+/*Insane Small, I think this devise does not exist*/
+@media screen and (min-width: 1px) and (max-width: 319px) {
+  body {
+    font-size: 40%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    order: -1;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+/*Phone Smallest*/
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  body {
+    font-size: 60%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    order: -1;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+/*Required from Canvas 500-700*/
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  body {
+    font-size: 70%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    order: -1;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+/*Tablets*/
+@media screen and (min-width: 701px) and (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    order: -1;
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+  }
+}
+
+/*Laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*Desktop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
