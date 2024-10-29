@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: sans-serif;
 }
 
 header {
-  background-color: yellow;
+  background-color: #de8f5f;
 }
 
 header h1 {
@@ -16,10 +16,11 @@ nav a {
   display: block;
   text-decoration: none;
   padding: 0.7em 0.3em;
+  color: black;
 }
 
 nav {
-  background-color: aqua;
+  background-color: #ffb26f;
   display: flex;
   justify-content: space-evenly;
 }
@@ -34,8 +35,11 @@ nav {
 
 .left {
   width: 30%;
-  background-color: green;
+  background-color: #ffcf9d;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .left h2 {
@@ -43,7 +47,7 @@ nav {
 }
 
 .fg-left {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 50%;
   height: fit-content;
 }
@@ -59,16 +63,17 @@ nav {
 /*Right*/
 
 .right {
-  background-color: red;
+  background-color: rgb(255, 207, 157, 0.8);
   width: 70%;
 }
 
 .right h2 {
   padding: 0 0.7em;
+  text-align: center;
 }
 
 .right-content {
-  background-color: rgb(255, 0, 204);
+  background-color: FFCF9D;
   display: flex;
   flex-wrap: wrap;
 }
@@ -76,11 +81,12 @@ nav {
 .fg-right {
   border: 2px solid black;
   width: 200px;
-  height: 500px;
+  height: 620px;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.7);
 }
 
 .fg-right img {
-  width: 100%;
+  width: 200px;
 }
 
 .text-right {
@@ -89,11 +95,12 @@ nav {
 
 /*footer*/
 footer {
-  background-color: yellow;
+  background-color: #de8f5f;
 }
 
 footer p {
   margin: 0;
+  padding: 1em 1em;
 }
 
 /*Media Queries*/
@@ -120,6 +127,14 @@ footer p {
   .left {
     width: 100%;
   }
+
+  .right-content {
+    justify-content: center;
+  }
+
+  .fg-right {
+    height: fit-content;
+  }
 }
 
 /*Phone Smallest*/
@@ -143,6 +158,14 @@ footer p {
 
   .left {
     width: 100%;
+  }
+
+  .right-content {
+    justify-content: center;
+  }
+
+  .fg-right {
+    height: fit-content;
   }
 }
 
@@ -168,6 +191,14 @@ footer p {
   .left {
     width: 100%;
   }
+
+  .right-content {
+    justify-content: center;
+  }
+
+  .fg-right {
+    height: 450px;
+  }
 }
 
 /*Tablets*/
@@ -192,12 +223,26 @@ footer p {
   .left {
     width: 100%;
   }
+
+  .right-content {
+    justify-content: center;
+  }
+
+  .fg-right {
+    height: 550px;
+  }
 }
 
 /*Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .right-content {
+    justify-content: center;
+  }
 }
 
-/*Desktop*/
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/*Desktop Wide Screen*/
+@media screen and (min-width: 1720px) {
+  .right-content {
+    justify-content: center;
+  }
 }
