@@ -14,9 +14,8 @@ header h1 {
 
 nav a {
   display: block;
-  text-decoration: none;
   padding: 0.7em 0.3em;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 nav {
@@ -44,11 +43,14 @@ nav {
 
 .left h2 {
   padding: 0 0.7em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .fg-left {
   /* border: 2px solid black; */
-  width: 50%;
+  width: 60%;
   height: fit-content;
 }
 
@@ -58,6 +60,12 @@ nav {
 
 .fg-left h4 {
   padding: 0 0.6em;
+}
+
+.fact {
+  margin: 0;
+  width: 60%;
+  padding-bottom: 1em;
 }
 
 /*Right*/
@@ -73,7 +81,6 @@ nav {
 }
 
 .right-content {
-  background-color: FFCF9D;
   display: flex;
   flex-wrap: wrap;
 }
@@ -137,7 +144,7 @@ footer p {
   }
 }
 
-/*Phone Smallest*/
+/*Phone Smaller*/
 @media screen and (min-width: 320px) and (max-width: 499px) {
   body {
     font-size: 60%;
