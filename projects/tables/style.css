@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sidebar {
+  width: 40%;
+  background-color: green;
+}
+
+.content {
+  width: 60%;
+  background-color: yellow;
+}
+
+.slank {
+  caption-side: top;
+}
