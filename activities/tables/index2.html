@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabke</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Class Schedule</h1>
+    </header>
+    <main>
+      <table class="schedule">
+        <thead>
+          <tr>
+            <th>Dept.</th>
+            <th>Number</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Credits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="5">Information Technology</th>
+          </tr>
+          <tr>
+            <td>IT</td>
+            <td>240</td>
+            <td>11AM</td>
+            <td rowspan="2">P3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>IT</td>
+            <td>240</td>
+            <td>12AM</td>
+            <td>3</td>
+          </tr>
+
+          <tr>
+            <th colspan="5">Computer Science</th>
+          </tr>
+          <tr>
+            <td>CS</td>
+            <td>210</td>
+            <td>2PM</td>
+            <td>P1</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>CS</td>
+            <td>211</td>
+            <td>12PM</td>
+            <td>P2</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4" id="total-credits">Total Credits</th>
+            <td headers="total-credits">12</td>
+          </tr>
+        </tfoot>
+      </table>
+      <hr />
+      <h1>Engagement Questions:</h1>
+      <ol>
+        <li>
+          <h3>Why don't we use the border property?</h3>
+          <p>
+            We do not use border property in HTML anymore in our tables because
+            the HTML no longer validate it anymore or it's an old stuff back in
+            2010's, and some new website now days may no longer use it anymore,
+            also our css will not able to overiding it, so we do not use border
+            property in our HTML anymore. But we can put it in the CSS by seelct
+            each th, tr, td.
+          </p>
+        </li>
+        <li>
+          <h3>
+            What is the easiest way to color every other row a different color?
+          </h3>
+          <p>
+            We can use the pseudoclass which is "nth-child" to choose the child,
+            or specifically choose which even or odd to select, or which child,
+            num 1 or 2 or so on. We already use pseudoclass before like the
+            ":hover" before in the nav.
+          </p>
+        </li>
+        <li>
+          <h3>When should we use a table?</h3>
+          <p>
+            When we have a project that contains some statistic data like
+            schedule class or anything that needs row columns to make it
+            readable in table we can use table to show that data can be more
+            readable and more fit in that content.
+          </p>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>

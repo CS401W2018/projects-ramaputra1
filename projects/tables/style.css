@@ -1,19 +1,107 @@
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.7em 0.7em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0.8em;
+}
+
+.nav a {
+  display: block;
+}
+
 .container {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
 
+/*SIDE BAR RIGHT*/
 .sidebar {
   width: 40%;
   background-color: green;
 }
 
+.sidebar h2 {
+  padding: 0 1em;
+  text-align: center;
+  font-size: 1.8em;
+}
+.sidebar p {
+  padding: 0 1em;
+  color: #1d1818;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/*content*/
 .content {
   width: 60%;
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
 }
 
 .slank {
-  caption-side: top;
+  margin: 5px auto;
+
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: rgb(169, 169, 169);
+}
+
+.table-caption {
+  background-color: orange;
+  padding: 1em 1em;
+}
+
+.slank thead {
+  background-color: blueviolet;
+  color: white;
+}
+
+.slank thead tr th {
+  padding: 1em 1em;
+}
+
+.odd {
+  background-color: lightcoral;
+}
+
+.odd td:nth-child(even) {
+  background-color: lightgoldenrodyellow;
+}
+
+/* .slank tbody tr td:nth-child(even) {
+  background-color: rgb(178, 223, 15);
+} */
+
+.even {
+  background-color: lightgoldenrodyellow;
+}
+
+.even td:nth-child(even) {
+  background-color: lightcoral;
+}
+
+.slank tr td {
+  padding: 0.2em 1.5em;
+}
+
+/* .slank tbody tr td:nth-child(even) {
+  background-color: rgb(2, 90, 255);
+} */
+
+.slank tfoot {
+  background-color: rgb(255, 0, 195);
+  color: white;
+}
+
+.slank tfoot tr th {
+  padding: 1em 1em;
 }

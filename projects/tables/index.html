@@ -7,15 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <nav></nav>
+    <header>
+      <h1>Slank Band</h1>
+    </header>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Page</a>
+      <a href="#">About</a>
+    </nav>
     <div class="container">
-      <aside class="sidebar"></aside>
+      <aside class="sidebar">
+        <h2>Slank Album 1990 - 1999:</h2>
+        <p>
+          This table project is about Slank Band's album, a popular rock band
+          from Indonesia. During 1990 to 1999 Slank released 9 albums (The last
+          1 album is a double album 999+09 Black and 999+09 Blue) so it counts
+          as 10, a total songs are 130 songs. Each album shows how they grew as
+          a band and their influence on Indonesian music.
+        </p>
+      </aside>
       <main class="content">
-        <!--???? What Caption Mean??????-->
         <!--Table-->
-        <table class="slank" border="1">
-          <caption>
+        <table class="slank">
+          <caption class="table-caption">
             Slank Band Album
           </caption>
           <thead>
@@ -27,12 +41,8 @@
             </tr>
           </thead>
           <tbody>
-            <!--Head Body Table-->
-            <tr>
-              <th colspan="3"></th>
-            </tr>
             <!--1st row-->
-            <tr>
+            <tr class="odd">
               <td>1990</td>
               <td>Suit-suit-he-he</td>
               <td>
@@ -45,7 +55,7 @@
               </td>
             </tr>
             <!--2nd row-->
-            <tr>
+            <tr class="even">
               <td>1991</td>
               <td>Kampungan</td>
               <td>
@@ -58,7 +68,7 @@
               </td>
             </tr>
             <!--3rd row-->
-            <tr>
+            <tr class="odd">
               <td>1992</td>
               <td>PISS</td>
               <td>
@@ -71,7 +81,7 @@
               </td>
             </tr>
             <!--4th row-->
-            <tr>
+            <tr class="even">
               <td>1994</td>
               <td>Generasi Biru</td>
               <td>
@@ -84,7 +94,7 @@
               </td>
             </tr>
             <!--5th row-->
-            <tr>
+            <tr class="odd">
               <td>1996</td>
               <td>Minoritas</td>
               <td>
@@ -97,7 +107,7 @@
               </td>
             </tr>
             <!--6th row-->
-            <tr>
+            <tr class="even">
               <td>1997</td>
               <td>Lagi Sedih</td>
               <td>
@@ -110,7 +120,7 @@
               </td>
             </tr>
             <!--7th row-->
-            <tr>
+            <tr class="odd">
               <td>1998</td>
               <td>Tujuh</td>
               <td>
@@ -123,7 +133,7 @@
               </td>
             </tr>
             <!--8th row-->
-            <tr>
+            <tr class="even">
               <td>1998</td>
               <td>Mata Hati Reformasi</td>
               <td>
@@ -136,7 +146,7 @@
               </td>
             </tr>
             <!--9th row-->
-            <tr>
+            <tr class="odd">
               <td>1999</td>
               <td>999+09 Hitam</td>
               <td>
@@ -149,7 +159,7 @@
               </td>
             </tr>
             <!--10th row-->
-            <tr>
+            <tr class="even">
               <td>1999</td>
               <td>999+09 Biru</td>
               <td>
@@ -162,11 +172,24 @@
               </td>
             </tr>
           </tbody>
-          <tfoot></tfoot>
+          <tfoot>
+            <tr>
+              <th id="total-year">Year Range:</th>
+              <td headers="total-year" colspan="2">1990 - 1999</td>
+            </tr>
+            <tr>
+              <th id="total-albums">Total Albums:</th>
+              <td headers="total-albums" colspan="2">10</td>
+            </tr>
+            <tr>
+              <th id="total-songs">Total Songs:</th>
+              <td headers="total-songs" colspan="2">130</td>
+            </tr>
+          </tfoot>
         </table>
         <!--End Table-->
       </main>
     </div>
-    <footer></footer>
+    <footer><p>&copy;Rama Adi Putra, 2024</p></footer>
   </body>
 </html>
