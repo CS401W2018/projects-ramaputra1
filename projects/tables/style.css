@@ -1,17 +1,30 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(255, 0, 0, 0.5);
+}
+
+header {
+  background-color: red;
+}
+
 header h1 {
   text-align: center;
   margin: 0;
   padding: 0.7em 0.7em;
+  color: rgb(0, 0, 0);
 }
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  padding: 1em 0.8em;
+  padding: 1.3em 0.8em;
+  margin-bottom: 30px;
+  background-color: rgb(255, 97, 97);
 }
 
-.nav a {
+.navbar a {
   display: block;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -22,8 +35,7 @@ header h1 {
 
 /*SIDE BAR RIGHT*/
 .sidebar {
-  width: 40%;
-  background-color: green;
+  width: 50%;
 }
 
 .sidebar h2 {
@@ -34,14 +46,13 @@ header h1 {
 .sidebar p {
   padding: 0 1em;
   color: #1d1818;
-  font-size: 1.4em;
-  text-align: center;
+  font-size: 1.25em;
 }
 
 /*content*/
 .content {
-  width: 60%;
-  background-color: rgb(255, 255, 255);
+  width: 50%;
+
   display: flex;
   justify-content: center;
   padding: 2em 0;
@@ -49,32 +60,34 @@ header h1 {
 
 .slank {
   margin: 5px auto;
-
+  background-color: rgb(255, 0, 0, 0.5);
   border-spacing: 0;
   border-collapse: collapse;
-  background-color: rgb(169, 169, 169);
 }
 
 .table-caption {
-  background-color: orange;
+  background-color: rgb(124, 0, 0);
   padding: 1em 1em;
+  color: white;
 }
 
 .slank thead {
-  background-color: blueviolet;
-  color: white;
+  background-color: rgb(160, 13, 13);
+  color: rgb(255, 255, 255);
 }
 
 .slank thead tr th {
   padding: 1em 1em;
+  border: 0.6px solid rgb(255, 255, 255, 0.2);
+  letter-spacing: 1px;
 }
 
 .odd {
-  background-color: lightcoral;
+  background-color: rgb(193, 35, 35, 0.5);
 }
 
 .odd td:nth-child(even) {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(219, 75, 75, 0.8);
 }
 
 /* .slank tbody tr td:nth-child(even) {
@@ -82,15 +95,16 @@ header h1 {
 } */
 
 .even {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(219, 75, 75, 0.8);
 }
 
 .even td:nth-child(even) {
-  background-color: lightcoral;
+  background-color: rgb(193, 35, 35, 0.5);
 }
 
 .slank tr td {
   padding: 0.2em 1.5em;
+  color: rgb(0, 0, 0);
 }
 
 /* .slank tbody tr td:nth-child(even) {
@@ -98,10 +112,23 @@ header h1 {
 } */
 
 .slank tfoot {
-  background-color: rgb(255, 0, 195);
-  color: white;
+  background-color: rgb(160, 13, 13);
+  color: rgb(0, 0, 0);
 }
 
 .slank tfoot tr th {
   padding: 1em 1em;
+  border: 0.6px solid rgb(255, 255, 255, 0.2);
+  color: white;
+  letter-spacing: 1px;
+}
+
+.slank tfoot tr td {
+  border: 0.6px solid rgb(255, 255, 255, 0.2);
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
