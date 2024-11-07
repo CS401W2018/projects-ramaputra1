@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Web Design</h1>
+    </header>
+    <nav></nav>
+    <main>
+      <h2>Get</h2>
+      <form action="processing.html" method="get">
+        First Name: <input type="text" name="first" /> Last Name:
+        <input type="text" name="last" /> <br />
+        Password: <input type="password" name="pass" />
+        <input type="submit" />
+      </form>
+
+      <br /><br />
+      <h2>Post</h2>
+      <form action="processing.html" method="post">
+        First Name: <input type="text" name="first" /> Last Name:
+        <input type="text" name="last" /> <br />
+        Password: <input type="password" name="pass" />
+        <input type="submit" />
+      </form>
+
+      <br /><br />
+      <h2>Using Label for, place holder, and value, and required</h2>
+      <h5>
+        Place holder: The more background. <br />
+        Value: the value (need to delete) <br />
+        required: you must fill before submit <br />
+        checked: for the checked box
+      </h5>
+      <form action="processing.html" method="post">
+        <label for="fname">First Name: </label
+        ><input type="text" id="fname" name="first" /> Last Name:
+        <input type="text" name="last" /> <br />
+        Password: <input type="password" name="pass" />
+        <input type="submit" />
+      </form>
+
+      <br /><br />
+
+      <hr />
+      <h1>Engagement Questions</h1>
+      <ol>
+        <li>
+          <h3>The form tag has an "action" attribute. What does it do?</h3>
+          <p>
+            The action attribute is to know where do you want to send the value
+            in the form, so if just put the path in the action attribute and
+            then when the user submit it, it will send to that path. Almost same
+            like the anchor link works.
+          </p>
+        </li>
+        <li>
+          <h3>The form tag has a "method" attribute. What does it do?</h3>
+          <p>
+            The method is like how the way we want the value to be send, there
+            are two ways which are post and get. So, when we have method
+            attribute it means we choose which way or which method we want the
+            value to be send.
+          </p>
+        </li>
+        <li>
+          <h3>What is the difference between a "POST" and a "GET"?</h3>
+          <p>
+            The difference between post and get is only in the way how the
+            website url will show, if we use post the value from the form
+            website will show in the url later, <br />
+            In other hand if we use get it will not show up in the url. <br />
+            We use post mostly when we search something, and we use get when we
+            try to input some password like that.
+          </p>
+        </li>
+      </ol>
+      <hr />
+      <h1>Note from class</h1>
+      <p>In radio, use same name to choose only 1</p>
+
+      <p>Click submit is like click an anchor, go to link.</p>
+      <p>get: all information is upthere in the link</p>
+      <p>action: where, get: the way</p>
+
+      <h6>label: for need to same like id in <input type="text" /></h6>
+    </main>
+    <footer>
+      <p>&copy;Rama Adi Putra, 2024.</p>
+    </footer>
+  </body>
+</html>
