@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Web Design</h1>
+    </header>
+    <nav></nav>
+    <main>
+      <form action="processing.html" method="post">
+        <fieldset>
+          <legend>Sign Up</legend>
+          <!--text biasa 1-->
+          <!--start div 1-->
+          <div class="form-row">
+            <!--label meluari input-->
+            <label for="fname">First Name: </label>
+            <input id="fname" type="text" name="first" value="joe" required />
+          </div>
+          <!--end div 1-->
+
+          <!--text biasa 2-->
+          <div class="form-row">
+            <label for="lname">Last Name: </label
+            ><input
+              type="text"
+              name="last"
+              placeholder="Last Name"
+              id="lname"
+            />
+          </div>
+
+          <!--text biasa 3-->
+          <div class="form-row">
+            <label for="pass">Password: </label>
+            <input type="text" name="pass" id="pass" />
+          </div>
+
+          <!--checkbox-->
+          <div class="check-row">
+            <div class="spacer"></div>
+            <!--liat di dalam meliputi input-->
+            <label>
+              <input type="checkbox" name="remember" checked />Remember Me
+            </label>
+          </div>
+
+          <!--option-->
+          <div class="form-row">
+            <!--label meluari-->
+            <label for="state">State</label>
+            <select name="state" id="state">
+              <option value="blank">Hi</option>
+              <option value="blank">Hi</option>
+              <option value="blank">Hi</option>
+              <option value="blank">Hi</option>
+              <option value="blank">Hi</option>
+            </select>
+          </div>
+
+          <!--textare-->
+          <div class="form-row">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments"></textarea>
+          </div>
+
+          <!--radio-->
+          <div class="check-row">
+            <div class="spacer">Class:</div>
+
+            <label><input type="radio" value="fresh" />Fresh</label>
+            <label><input type="radio" value="fresh" />Fresh</label>
+            <label><input type="radio" value="fresh" />Fresh</label>
+            <label><input type="radio" value="fresh" />Fresh</label>
+            <label><input type="radio" value="fresh" />Fresh</label>
+          </div>
+
+          <!--submit-->
+          <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit" />
+          </div>
+        </fieldset>
+      </form>
+      <hr />
+      <ol>
+        <h1>Engagemenet Questions</h1>
+        <li>
+          <h3>What are different ways to style your form?</h3>
+          <p>
+            We can use many ways, if we only use the most basic simple one
+            without CSS, just use br in our HTML and let it layout each line.
+            <br />
+            but, we do not want to use that, instead of that we can make it each
+            box with the div tag so it will easier to lay out them, <br />
+            then, use the flex to arrange their position, also we can use
+            pseudoclass focus to make it accesible when the user click it.
+            <br />
+            There are so many different way to style our form, flex; grid;
+            float. Use the easier one with the right condition that your pages
+            have.
+          </p>
+        </li>
+        <li>
+          <h3>Why does the professor like to use flex?</h3>
+          <p>
+            Because flex really easy and helpful to arrange the layouting
+            position. Not only the professor but I think most of web dev use
+            flex a lot. <br />
+            Some reason because flex are able to modify to row and column, which
+            is right, left, top, bottom. It is so easy to arrange our element
+            HTML.
+          </p>
+        </li>
+      </ol>
+
+      <hr />
+      <h2>Note</h2>
+      <p>do not use br but try surround by div.</p>
+    </main>
+    <footer>
+      <p>&copy;Rama Adi Putra, 2024.</p>
+    </footer>
+  </body>
+</html>

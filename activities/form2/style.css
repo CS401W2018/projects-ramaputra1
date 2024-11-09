@@ -1,0 +1,58 @@
+fieldset {
+  box-shadow: 3px 3px 3px black;
+  background-color: yellow;
+}
+
+legend {
+  border: 1px solid black;
+  background-color: blue;
+  padding: 10px;
+  color: white;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.form-row label {
+  width: 150px;
+  /* background-color: lawngreen; */
+  text-align: right;
+}
+
+.spacer {
+  width: 150px;
+  text-align: right;
+}
+
+.check-row {
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  legend {
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .form-row input {
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row label {
+    width: 150px;
+    text-align: right;
+  }
+
+  .form-row input:focus {
+    background-color: rgb(68, 0, 255);
+  }
+}
