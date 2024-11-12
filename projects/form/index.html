@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Form</h1>
+    </header>
+    <main>
+      <form action="form.html" method="post">
+        <fieldset>
+          <legend>User Information</legend>
+
+          <!--Textbox-->
+          <div class="form-box">
+            <label for="fname">Full Name:</label>
+            <input
+              class="inputBox"
+              type="text"
+              id="fname"
+              name="fullName"
+              required
+            />
+          </div>
+
+          <!--Password-->
+          <div class="form-box">
+            <label for="password">Password:</label>
+            <input
+              class="inputBox"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <!--Email - HTML5-->
+          <div class="form-box">
+            <label for="email">Email:</label>
+            <input
+              class="inputBox"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <!-- Radio Buttons-->
+          <div class="radio-box">
+            <label class="spacer">Gender:</label>
+            <div class="container-inside">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label class="radio-label" for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label class="radio-label" for="female">Female</label>
+            </div>
+          </div>
+
+          <!--Date HTML5-->
+          <div class="form-box">
+            <label for="dob">Date of Birth:</label>
+            <input class="inputBox" type="date" id="dob" name="dateOfBirth" />
+          </div>
+
+          <!--Select Box-->
+          <div class="form-box">
+            <label for="country">Country:</label>
+            <select class="inputBox" id="country" name="country">
+              <option value="usa">United States</option>
+              <option value="canada">Indonesia</option>
+              <option value="uk">Malaysia</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!--Textarean-->
+          <div class="form-box">
+            <label for="comments">Comments:</label>
+            <textarea
+              class="inputBox"
+              id="comments"
+              name="comments"
+              rows="4"
+              cols="30"
+            ></textarea>
+          </div>
+
+          <!--Checkbox-->
+          <div class="check-box">
+            <label class="spacer" for="terms">Term:</label>
+            <div class="container-inside">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">I agree to the terms and conditions</label>
+            </div>
+          </div>
+
+          <!--Submit-->
+          <div class="form-box">
+            <div class="spacer"></div>
+            <input class="inputBox submit" type="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;Rama Adi Putra, 2024.</p>
+    </footer>
+  </body>
+</html>
