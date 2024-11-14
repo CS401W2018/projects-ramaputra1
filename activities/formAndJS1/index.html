@@ -11,7 +11,7 @@
       <h1>Form</h1>
     </header>
     <main>
-      <form action="form.html" method="post">
+      <form action="form.html" method="post" id="myForm">
         <fieldset>
           <legend>User Information</legend>
 
@@ -112,8 +112,81 @@
         </fieldset>
       </form>
     </main>
+
+    <hr />
+    <section>
+      <h1>Engagement Questions</h1>
+
+      <h3>1. What is JavaScript? How did it get its name?</h3>
+      <p>
+        About 1990's Invented, <br />
+        Unique: Can run inside the browser. <br />
+        And around that time there was a popular language owned by Sun
+        Microsystems named Java, so they named it almost similar which is
+        Javascript to gain the same popularity on marketing even they are really
+        completely different, cause as we know that Js is a script language
+        which is run in the DOM browser and Java is the really OOP language.
+      </p>
+
+      <h3>2. What are the two ways you can run JavaScript?</h3>
+      <p>
+        One of it is only run inside the browser, and we call it run in the DOM.
+        <br />
+        Nowadays, there's called Node.js you can run Javascript and can Run JS
+        in your computer. <br />
+        So, two ways, from DOM or Node.js
+      </p>
+
+      <h3>3. What was the most popular front-end js library?</h3>
+      <p>
+        Jquery Library. <br />
+        It's still there, but not that much.
+      </p>
+
+      <h3>4. What is the most popular front-end js library today?</h3>
+      <p>
+        React. <br />
+        Nowadays most of all application or website built by react, and a lot of
+        job or internship opportunity required react to use.
+      </p>
+      <br /><br />
+      <hr />
+      <h1>Note</h1>
+      <p>1. It's not the HTML doing the JS, but JS doing the HTML</p>
+      <p>
+        A lot of event, like click, and when the form get submitted THENNN, call
+        the alert. <br />
+        preventDefault is no submit
+      </p>
+    </section>
     <footer>
       <p>&copy;Rama Adi Putra, 2024.</p>
     </footer>
+
+    <!--My Script-->
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          //
+          const fname = document.getElementById("fname").value;
+          const email = document.getElementById("email").value;
+          const formData = {
+            fname: fname,
+            email: email,
+          };
+          if (!fname || !email) {
+            alert("Nahhh");
+            return;
+          }
+          console.log(formData);
+          //
+          alert("Congrats!");
+        });
+
+      //
+    </script>
   </body>
 </html>
