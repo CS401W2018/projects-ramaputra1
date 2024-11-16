@@ -10,7 +10,7 @@
     <header>
       <h1>Form</h1>
     </header>
-    <main>
+    <main id="main">
       <div id="message"></div>
       <form action="form.html" method="post" id="myForm">
         <fieldset>
@@ -199,6 +199,7 @@
               const response = JSON.parse(xhr.responseText);
               document.getElementById("message").innerHTML = response.message;
               document.getElementById("myForm").innerHTML = "";
+              document.getElementById("main").innerHTML = "";
             } else if (xhr.readyState === 4) {
               alert("error ngaaabbbzzzz"); //kalo cuma 4 dan ga 200 ya error ngabz
             }
