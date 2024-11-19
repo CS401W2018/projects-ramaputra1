@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+textarea {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #560060;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 15%;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 75%;
+}
+
+form {
+  background: white;
+  padding: 20px;
+
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  height: fit-content;
+  width: 60%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 150px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: fit-content;
+  width: 100%;
+}
+
+button {
+  width: 10%;
+  padding: 10px;
+  background: #710175;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(113, 1, 117, 0.9);
+}
+
+/* Style radio buttons and checkboxes */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: auto;
+  height: 10%;
+  padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    height: 220vh;
+  }
+
+  header {
+    height: 10%;
+  }
+
+  footer {
+    height: 15%;
+    align-items: end;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    width: 100%;
+  }
+}
