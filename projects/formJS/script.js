@@ -1,14 +1,14 @@
 document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const firstName = document.getElementById("firstName").value;
+  const name = document.getElementById("name").value;
   const age = document.getElementById("age").value;
   const from = document.getElementById("from").value;
   const comments = document.getElementById("comments").value;
   const rating = document.getElementById("rating").value;
 
   // 1
-  if (!firstName || !from || !comments) {
+  if (!name || !from || !comments) {
     alert("Name, From, and Comments are required!");
     return;
   }
@@ -26,7 +26,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   }
 
   const data = {
-    firstName: firstName,
+    name: name,
     age: age,
     from: from,
     comments: comments,
