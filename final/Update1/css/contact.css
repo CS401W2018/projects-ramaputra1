@@ -1,0 +1,245 @@
+body {
+  font-family: "Poppins";
+  font-size: 16px;
+  background-image: url(../img/angga-pratama-GAXTZrJmsfY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body a {
+  color: white;
+}
+
+/*HEADER*/
+header {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* background-color: blue; */
+}
+
+header .version {
+  width: 40%; /*version*/
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.4em;
+}
+
+header nav {
+  width: 60%; /*nav*/
+  height: 100%;
+  display: flex;
+  gap: 4em;
+  justify-content: end;
+  align-items: center;
+  margin-right: 4em;
+  padding-top: 0.4em;
+}
+
+header nav a {
+  display: block; /*nav a*/
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  padding: 0.2em 0.3em;
+  position: relative;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.2s ease-in-out;
+}
+
+header nav a:hover {
+  text-shadow: 0.5px 0 0.5px white;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+/*MAIN*/
+main {
+  width: 100vw; /*main*/
+  height: 75vh;
+}
+
+main .hero-text {
+  height: 95%;
+  width: 45%;
+  margin-left: 3.5em;
+  padding-top: 3em;
+}
+
+main .hero-text h1 {
+  font-size: 5rem; /*h1*/
+  margin: 0;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-shadow: 12px 16px 20px rgb(20, 0, 0);
+}
+
+main .hero-text p {
+  /* padding: 0em 0.5em; */
+  font-size: 1.6rem; /*p*/
+  font-weight: 600;
+  text-shadow: 5px 5px 5px rgb(20, 0, 0);
+  margin-top: 0.9em;
+  font-family: "Playfair Display";
+  letter-spacing: 1px;
+  line-height: 1.5;
+  /* display: inline; */
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+main .hero-text .container-hero-link {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+main .hero-text .participate {
+  /*.participate*/
+  margin-top: 3em;
+  /* background-color: rgb(8, 9, 61); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 35%;
+      height: 70%; */
+}
+
+main .hero-text .participate a {
+  text-decoration: none;
+  /* background-color: rgb(8, 9, 61); */
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.2em 0.4em;
+  /* font-style: italic; */
+  /* padding: 1em 1em; */
+  /* border-radius: 5px; */
+  border-bottom: 2px solid white;
+  /* background-color: rgb(85, 0, 0);
+      background-color: rgb(8, 9, 61, 0.8);
+      background-color: rgba(0, 0, 0, 0.7); */
+  transition: 0.2s;
+}
+
+main .hero-text .participate a:hover {
+  /* background-color: rgba(14, 16, 100, 0.8); */
+
+  color: goldenrod;
+}
+
+main .hero-text .explore {
+  /*.participate*/
+  margin-top: 3em;
+  /* background-color: rgb(8, 9, 61); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 35%;
+      height: 70%; */
+}
+
+main .hero-text .explore a {
+  text-decoration: none;
+  padding: 0.2em 0.5em;
+  /* font-style: italic; */
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 2px solid white;
+  /* background-color: rgb(61, 8, 8, 0.8);
+      border-radius: 5px; */
+  /* background-color: rgb(79, 8, 194); */
+  transition: 0.2s;
+}
+
+main .hero-text .explore a:hover {
+  /* background-color: rgba(94, 14, 14, 0.8); */
+  color: goldenrod;
+}
+
+/*FOOTER*/
+footer {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+footer .copyright {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+}
+
+footer .link {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .link .link-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+footer .link .link-item a i {
+  font-size: 1.3rem;
+}
+
+footer .link .link-item a:nth-child(2) {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0 0.3em;
+}
+
+footer .link .link-item:nth-child(1) a:nth-child(1):hover {
+  color: rgb(194, 142, 0);
+  transition: 0.2s;
+}
+
+footer .link .link-item:nth-child(1) a:nth-child(1):hover ~ a:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+
+footer .link .link-item:nth-child(2) a:nth-child(1):hover {
+  color: rgb(0, 21, 182);
+  transition: 0.2s;
+}
+
+footer .link .link-item:nth-child(2) a:nth-child(1):hover ~ a:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+
+footer .link .link-item:nth-child(3) a:nth-child(1):hover {
+  color: rgb(177, 177, 177);
+  transition: 0.2s;
+}
+
+footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
+  border-bottom: 1px solid white;
+}
