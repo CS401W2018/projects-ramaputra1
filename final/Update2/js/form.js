@@ -10,7 +10,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   // 1
   if (!name || !from || !comments) {
-    alert("Name, From, and Comments are required!");
+    alert("Name, Country, and Superstition area are required!");
     return;
   }
 
