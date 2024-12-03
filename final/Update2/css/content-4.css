@@ -474,8 +474,6 @@ footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
 
   main .nav-main .items {
     background-color: transparent;
-
-    border-radius: none;
   }
 
   main .nav-main .items .btn-show button {
