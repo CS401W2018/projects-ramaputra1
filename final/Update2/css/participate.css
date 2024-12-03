@@ -155,7 +155,7 @@ select {
 button {
   width: 10%;
   padding: 10px;
-  background: #45005a;
+  background: #000000;
   color: white;
   border: none;
   border-radius: 3px;
@@ -163,7 +163,7 @@ button {
 }
 
 button:hover {
-  background: rgba(71, 3, 85, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Style radio buttons and checkboxes */
@@ -326,7 +326,7 @@ footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
 
   main {
     width: 100vw; /*main*/
-    height: 75svh;
+    height: 85svh;
   }
 
   header #content-btn-extra {
@@ -442,6 +442,11 @@ footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
     width: 100%;
   }
 
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   footer {
     width: 100vw;
     height: 10svh;
@@ -458,14 +463,18 @@ footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
     overflow: scroll;
   }
 
+  main {
+    width: 100vw; /*main*/
+    height: 105svh;
+  }
+
   header {
     width: 100vw;
     height: 15svh;
   }
 
-  main {
-    width: 100vw;
-    height: 75svh;
+  form {
+    height: 80%;
   }
 
   main .content {

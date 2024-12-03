@@ -336,6 +336,12 @@ main .nav-main .items .nav-participate .box-participate a:hover {
   background-color: rgb(23, 23, 129);
 }
 
+main .cs-bottom a {
+  color: blue;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
 /*FOOTER*/
 footer {
   width: 100vw;

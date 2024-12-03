@@ -43,6 +43,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       const response = JSON.parse(xhr.responseText);
       document.getElementById("message").innerHTML = response.message;
       document.getElementById("myForm").style.display = "none";
+      document.getElementById("titleh1").style.display = "none";
+      document.getElementById("titlep").style.display = "none";
     } else if (xhr.readyState === 4) {
       alert("Error! Try again later");
     }

@@ -5,7 +5,7 @@
 body {
   font-family: "Poppins";
   font-size: 16px;
-  background-image: url(../img/breathtaking-hawaii-landscape-with-blue-sea.jpg);
+  background-image: url(../img/camille-bismonte-vUc03gxjEY4-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -171,7 +171,7 @@ main .content .content-box .content-box-resp .content-section .cs-middle {
 
 main .content .content-box .content-box-resp .content-section .cs-middle p {
   /* width: 100%;
-  height: 70%; */
+    height: 70%; */
   padding: 1em 0;
 }
 
@@ -320,7 +320,7 @@ main .nav-main .items .data .data-box a {
   /* font-style: italic; */
   line-height: 250%;
   /* font-family: "Poppins";
-    font-weight: 100; */
+      font-weight: 100; */
   text-decoration: none;
 }
 

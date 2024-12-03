@@ -333,6 +333,11 @@ footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
     color: red;
   }
 
+  main .nav-main iframe {
+    width: 210px;
+    height: 116px;
+  }
+
   header {
     width: 100vw;
     height: 15svh;
@@ -495,6 +500,15 @@ footer .link .link-item:nth-child(3) a:nth-child(1):hover ~ a:nth-child(2) {
 
   body {
     overflow: scroll;
+  }
+
+  main .nav-main iframe {
+    width: 124px;
+    height: 96px;
+  }
+
+  main .nav-main .container-box2 h1 {
+    font-size: 1.2rem;
   }
 
   header {
